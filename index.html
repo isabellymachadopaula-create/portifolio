@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Isabelly - Portfólio</title>
+        <meta name="description" content="Portfólio de projetos de desenvolvimento de sistemas.">
+
+        <link rel="preconnect" href="https://googleapis.com">
+        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link href="https://googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="granulado"></div>
+        <header class="navegacao" id="navegacao">
+            <div class="navegacao__conteudo">
+                <a href="#topo" class="navegacao__marca">
+                    <span class="navegacao__marca-icone">&lt;/&gt;</span>
+                    <span class="navegacao__marca-nome">Isabelly</span>
+                </a>
+                <nav class="navegacao__links" id="menu-links">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#habilidades">Skills</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+                <div class="navegacao__acoes">
+                    <button class="alternar-tema" id="alternar-tema" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+                        <svg class="icone icone--sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+                        <svg class="icone icone--lua" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/></svg>
+                    </button>
+                    <button class="navegacao__hamburguer" id="menu-hamburguer" aria-label="Abrir Menu" aria-expanded="false">
+                        <span></span> <span></span> <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        
+        <main id="topo">
+            <!--Destaque-->
+            <section class="destaque" id="destaque">
+                <div class="destaque__conteudo">
+                    <p class="destaque__status" id="destaque-status">
+                        <span class="destaque__status-ponto"></span>
+                        <span id="texto-status">Disponível para projetos</span>
+                    </p>
+                    <h1 class="destaque__titulo">
+                        Olá, eu sou <span class="destaque__titulo-nome" id="destaque-nome">Isabelly</span>
+                    </h1>
+
+                    <p class="destaque__cargo">
+                        <span id="texto-cargo"></span> <span class="destaque__cursor" aria-hidden="true">|</span>
+                    </p>
+
+                    <p class="destaque__bio" id="destaque-bio">
+                        Me chamo Isabelly, sou uma pessoa criativa e gosto muito de aprender coisas novas. Estudo programação e desenvolvimento de sistemas, gosto de construir sites, explorar novas ideias e transformar minha criatividade em projetos.
+                    </p>
+
+                    <div class="destaque__acoes">
+                        <a href="#projetos" class="botao botao--principal">Ver projetos</a>
+                        <a href="#contato" class="botao botao--transparente">Falar comigo</a>
+                    </div>
+                    <ul class="destaque__redes" id="destaque--redes"></ul>
+                </div>
+
+                <div class="destaque__log" aria-hidden="true">
+                    <div class="destaque__log-linha"><span>~</span>build_log --tail</div>
+                    <div class="destaque__log-linha" id="Linha-log-1"></div>
+                    <div class="destaque__log-linha" id="Linha-log-2"></div>
+                    <div class="destaque__log-linha" id="Linha-log-3"></div>
+                    <div class="destaque__log-linha destaque__log-linha-piscar"> <span class="destaque__log-cursor">&#x258D;</span></div>
+                </div>
+            </section>
+
+            <!--========================SOBRE========================-->
+            <section class="sobre" id="sobre">
+                <div class="cabecalho-secao">
+                    <h2>Sobre mim</h2>
+                    <p class="cabecalho-secao__subtitulo" id="sobre-titulo">
+                        Um pouco da minha trajetória até aqui.
+                    </p>
+                </div>
+
+                <div class="sobre__grade">
+                    <div class="sobre__foto">
+                        <div class="sobre__foto-moldura" id="sobre-foto">
+                            <span><img src="Isa.png"></span>
+                        </div>
+                    </div>
+                    <div class="sobre__texto">
+                        <p id="sobre-paragrafo-1">
+                            Descobri o universo da tecnologia na escola e, desde o primeiro contato, soube que queria criar soluções por meio do código. A formação técnica me deu a estrutura lógica necessária, mas foi no desenvolvimento front-end que encontrei meu verdadeiro propósito profissional. Sou movida pelo desafio de construir a ponte entre o design e a funcionalidade. Criar interfaces fluidas, dinâmicas e visualmente impactantes é o que me motiva a evoluir continuamente como desenvolvedora.
+                        </p>
+                        <p id="sobre-paragrafo-2">
+                            Criando, aprendendo e transformando linhas de código em interfaces reais. Meu foco atual é registrar a evolução dos meus projetos de front-end com orgulho de cada desafio superado nas aulas. Uma jornada de puro aprendizado por enquanto, mas com os olhos atentos ao que o futuro reserva.                       
+                        </p>
+
+                        <ul class="sobre__linha-tempo" id="sobre-linha-tempo"></ul>
+                    </div>
+                </div>
+            </section>
+
+            <!----===================================PROJETOS=======================================================-->
+            <section class="projetos" id="projetos">
+                <div class="cabecalho-secao">
+                    <h2>Projetos</h2>
+                    <p class="cabecalho-secao__subtitulo">Registro cronológico do que venho construindo.</p>
+                </div>
+
+                <div class="projetos_filtros" id="projetos-filtros"></div>
+
+                <div class="projetos__linha-tempo" id="projetos-linha-tempo"></div>
+            </section>
+
+            <!--========================================HABILIDADES===================================================-->
+            <section class="habilidades" id="habilidades">
+                <div class="cabecalho-secao">
+                    <h2>Skills</h2>
+                    <p class="cabecalho-secao__subtitulo">Tecnologias e ferramentas que uso no dia a dia.</p>
+                </div>
+
+                <div class="habilidades__grupos" id="habilidades-grupos"></div>
+            </section>
+        </main>
+
+        <!--========================================RODAPÉ===================================================-->
+        <footer class="contato" id="contato">
+            <div class="contato__conteudo">
+                <h2>Vamos conversar?</h2>
+                <p>Me chama por qualquer um dos canais abaixo.</p>
+
+                <div class="contato__acoes">
+                    <button class="botao botao--principal" id="copiar-email">
+                        <span id="copiar-email-texto">Copiar e-mail</span>
+                    </button>
+                    <a href="#" class="botao botao--principal" id="contato-curriculo">Baixar currículo</a>
+                </div>
+
+                <ul class="contato__redes" id="contato-redes"></ul>
+
+                <p class="contato__rodape-nota">
+                    <span id="rodape-nome">Isabelly</span>
+                    <span id="rodape-ano"></span>
+                </p>
+            </div>
+
+            <button class="voltar-topo" id="voltar-topo" aria-label="Voltar ao topo">&#x2191</button>
+        </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
